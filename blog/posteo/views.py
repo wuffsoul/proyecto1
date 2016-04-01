@@ -1,7 +1,17 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("<h4>INDICE DE POSTEOS.</h4>")
+def listar_post(request):
+    return HttpResponse("<h1>Listar</h1>")
+
+def crear_post(request):
+    return HttpResponse("<h1>Crear</h1>")
+
+def detalle_post(request):
+    return HttpResponse("<h1>Detalle</h1>")
+
+def actualizar_post(request):
+    return HttpResponse("<h1>Actualizar</h1>")
+
+def borrar_post(request):
+    return HttpResponse("<h1>Borrar</h1>")
